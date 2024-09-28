@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #e2c7fc, #f2a4a1, #a7dbf2);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; /* Centraliza os títulos */
+    color: #dce9f1; /* Cor roxo pastel */
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin: 30px 0;
+    color: #9ccdd9; /* Cor roxo pastel */
+}
+
+.header-content p {
+    font-size: 1.2rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.attraction {
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.attraction:hover {
+    transform: scale(1.05);
+}
+
+.attraction img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.attraction p {
+    font-family: 'Dancing Script', cursive; /* Fonte bonita cursiva */
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+}
+
+#restaurants ul {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    list-style-type: none; /* Remove os bullets padrão */
+}
+
+#restaurants ul li {
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+
+#restaurants ul li::before {
+    content: "🍽️"; /* Emoji personalizado */
+    font-size: 1.3rem;
+    padding-right: 10px;
+    color: #b19cd9; /* Mesma cor pastel */
+}
+
+#tours .tour-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#tours .tour {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 30%;
+    text-align: center;
+}
+
+#comments {
+    margin-top: 20px;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#comment-input {
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+#comment-form button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #57a0ff;
+    color: white;
+    cursor: pointer;
+}
+
+#comment-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment p {
+    margin-bottom: 5px;
+}
+
+.comment span {
+    color: #2F80ED;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #ecd8ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .attraction, .tour {
+        width: 100%;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando o País Basco - Blog de Viagens</title>
+    <!-- Fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Bem-vindo ao País Basco, Espanha</h1>
+            <p>Descubra os melhores pontos turísticos, restaurantes e passeios nesta região incrível!</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="main-attractions">
+            <h2>Pontos Turísticos</h2>
+            <div id="gallery">
+                <div class="attraction">
+                    <img id="san-sebastian-img" src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/12/26/df/11.jpg" alt="San Sebastian">
+                    <h3>San Sebastián</h3>
+                    <p>Famosa por suas praias e a culinária, San Sebastián é o destino perfeito para os amantes do mar e da boa comida.</p>
+                </div>
+                <div class="attraction">
+                    <img id="guggenheim-img" src="https://cms.guggenheim-bilbao.eus/uploads/2019/05/el-edificio-guggenheim-bilbao-1.jpg" alt="Museu Guggenheim">
+                    <h3>Museu Guggenheim</h3>
+                    <p>Um dos museus de arte moderna mais icônicos do mundo, localizado em Bilbao.</p>
+                </div>
+                <div class="attraction">
+                    <img id="gaztelugatxe-img" src="https://air-production-cms-uploads.storage.googleapis.com/uploads/2021/07/13141440/San-Juan-de-Gaztelugatxe-web.jpg" alt="San Juan de Gaztelugatxe">
+                    <h3>San Juan de Gaztelugatxe</h3>
+                    <p>Uma ilhota espetacular conectada ao continente por uma ponte de pedra. E para os amantes de séries, foi um dos locais usados nas gravações de Game Of Thrones.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="maps">
+            <h2>Mapa dos Pontos Turísticos</h2>
+            <div id="map" style="height: 400px; width: 100%;"></div>
+        </section>
+
+        <section id="restaurants">
+            <h2>Restaurantes Recomendados</h2>
+            <ul>
+                <li><strong>Mugaritz</strong> - Restaurante de alta gastronomia.</li>
+                <li><strong>Asador Etxebarri</strong> - Famoso por seus pratos grelhados.</li>
+                <li><strong>Arzak</strong> - Um ícone da gastronomia basca.</li>
+            </ul>
+        </section>
+
+        <section id="tours">
+            <h2>Passeios e Dicas</h2>
+            <div class="tour-container">
+                <div class="tour">
+                    <h3>Explorar a Costa Basca</h3>
+                    <p>Alugue um carro e dirija sem pressa ao longo da costa. Aprecie sem moderação!</p>
+                </div>
+                <div class="tour">
+                    <h3>Caminhada pelos Pirineus</h3>
+                    <p>Explore as trilhas de diversas intesidades do Parque Natural de Urkiola.</p>
+                </div>
+                <div class="tour">
+                    <h3>Degustação de Pintxos</h3>
+                    <p>Passe pelas ruas de San Sebastián e Bilbao e prove os diversis tipos de pintxos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="comments">
+            <h2>Deixe seu comentário sobre o País Basco</h2>
+            <form id="comment-form">
+                <textarea id="comment-input" placeholder="Escreva seu comentário aqui..." required></textarea>
+                <button type="submit">Enviar Comentário</button>
+            </form>
+            <div id="comment-section">
+                <!-- Comentários aparecerão aqui -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Explorando o País Basco - Blog de Viagens-Codingrid</p>
+    </footer>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <script src="script.js"></script>
+</body>
+</html>
